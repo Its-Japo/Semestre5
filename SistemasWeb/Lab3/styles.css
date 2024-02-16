@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: rgb(65, 65, 65);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+details {
+    width: 75%;
+    padding: 20px;
+    background-color: rgba(150,150,150, 0.7);
+    color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+details ul {
+    margin-left: 30px;
+}
+
+.title {
+    width: 100%;
+    display: grid;
+}
+
+.title h1 {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 3rem;
+}
+
+.title h5 {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.storyboard {
+    margin: 20px;
+    padding: 20px;
+    width: 75%;
+    background-color: rgba(150,150,150, 0.7);
+    border-radius: 20px;
+}
+
+.storyboard * {
+    text-align: center;
+    color: white;
+}
+
+.storyboard p {
+    text-align: justify;
+    margin: 15px;
+    padding: 15px;
+}
+
+.storyboard img {
+    width: 40%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.elections {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
+}
+
+.elections div{
+    width: 80%;
+    padding: 20px;
+    background-color: rgba(150,150,150, 0.7);
+    border-radius: 20px;
+    border: 2px solid white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.elections div a {
+    text-decoration: none;
+}
+
+
+.election4 {
+    display: grid;
+    grid-template-columns: 100%;
+    place-items: center;
+}
+
+.election4 div{
+    width: 40%;
+    padding: 20px;
+    background-color: rgba(150,150,150, 0.7);
+    border-radius: 20px;
+    border: 2px solid white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.election4 div a {
+    text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.footer-content {
+    width: 80%;
+    display: block;
+    padding: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-content h4 {
+    color: white;
+}
+
+.pageNo {
+    background-color: rgb(119, 233, 119);
+}

@@ -1,5 +1,4 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -52,11 +51,12 @@ button[type=submit] {
 
 .sitio-web{
   height: 100%;
+  width: 100dvh;
 }
 
 .header {
   height: 64px;
-  width: auto;
+  width: 100%;
   display: inline-flex;
   gap: 8px;
   padding: 8px;
@@ -64,6 +64,7 @@ button[type=submit] {
   justify-self: center;
   border: 1px solid white;
   border-radius: 16px;
+  background-color: black;
 }
 .paginas{
   height: calc(100vh - 64px);

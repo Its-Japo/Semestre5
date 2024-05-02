@@ -2,6 +2,12 @@ FROM node:alpine
 
 WORKDIR /src/server
 
+COPY /server/package*.json ./
+
 RUN npm i create-vite
 
-CMD ["npm","run","dev"]
+RUN npm install
+
+COPY server/. .
+
+CMD ["npm","run","start"]

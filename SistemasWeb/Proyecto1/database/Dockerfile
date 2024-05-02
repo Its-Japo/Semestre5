@@ -10,4 +10,4 @@ FROM mysql:latest
 #ENV MYSQL_PASSWORD=blog_password
 
 #Copy the database schema to the container
-#COPY schema.sql ./docker-entrypoint-initdb.d/
+COPY database/schema.sql ./docker-entrypoint-initdb.d/

@@ -47,7 +47,6 @@ async function updatePostWithImage(id, title, content, image) {
     'UPDATE blogs SET title = ?, content = ?, image_base64 = ? WHERE id = ?',
     [title, content, image, id]
   )
-  console.log(result)
   return result
 }
 

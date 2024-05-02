@@ -42,18 +42,23 @@ function Card({id, titleP, contentP, imageP}) {
     }
 
     async function deletePost() {
-        await fetch(`http://localhost:3030/posts/${idG}`, {
-            method: 'DELETE',
-            headers: {
-                'x-auth-token': localStorage.getItem('token'),
-                'Content-Type': 'application/json',
+        try {
+            const response = await fetch(`http://localhost:3030/posts/${idG}`, {
+                method: 'DELETE',
+                headers: {
+                    'x-auth-token': localStorage.getItem('token'),
+                    'Content-Type': 'application/json',
+                }
+            });
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
             }
-        })
-        .then(response => response.json())
-        .then(() => {
-            window.location.reload();
-        })
-        
+            await response.json();
+            location.reload();
+        } catch (error) {
+            console.error('Failed to delete the post:', error);
+            location.reload();
+        }
     }
 
     async function updatePost() {
@@ -72,12 +77,8 @@ function Card({id, titleP, contentP, imageP}) {
                 })
             })
             .then(response => response.json())
-            .then((data) => {
-                if (data.error) {
-                    return;
-                }
-
-                window.location.reload();
+            .then(() => {
+                location.reload()
             })
         })
 

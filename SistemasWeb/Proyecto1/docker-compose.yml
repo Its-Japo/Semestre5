@@ -1,14 +1,14 @@
 version: '3.8'
-name: 'blog'
+name: 'blogprod'
 
 services:
   client:
     build: 
       context: ./
       dockerfile: client/Dockerfile
-    container_name: vite-client
-    volumes:
-    - ./client:/src/client
+    container_name: vite-client-prod
+    #volumes:
+    #- ./client:/src/client
     ports:
       - "5170:5173"
     depends_on:
@@ -18,9 +18,9 @@ services:
     build: 
       context: ./
       dockerfile: server/Dockerfile
-    container_name: express-app
-    volumes:
-      - ./server:/src/server
+    container_name: express-app-prod
+    #volumes:
+     # - ./server:/src/server
     ports:
       - "3030:3000"
     depends_on:
@@ -32,9 +32,9 @@ services:
     build:
       context: ./
       dockerfile: database/Dockerfile
-    container_name: mysql-db
-    volumes:
-      - ./database:/docker-entrypoint-initdb.d/
+    container_name: mysql-db-prod
+    #volumes:
+    #  - ./database:/docker-entrypoint-initdb.d/
     environment:
       MYSQL_DATABASE: blog_db
       MYSQL_ROOT_PASSWORD: root_password

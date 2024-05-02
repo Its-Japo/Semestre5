@@ -2,7 +2,7 @@ import Card from './card';
 import Loading from '../../components/loading';
 import useApi from '../../hooks/useApi';
 import useForm from '../../hooks/useForm';
-import React, { lazy, Suspense } from 'react';
+import { Suspense } from 'react';
 
 function Dashboard() {
 

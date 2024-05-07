@@ -14,7 +14,7 @@ Para poder ejecutar el proyecto se requiere de tener instaladas las siguientes t
 ## Estructura del repositorio
 
 ### Cliente
-[Vite Logo](https://uploads.sitepoint.com/wp-content/uploads/2021/04/1618197067vitejs.png)
+![Vite Logo](https://uploads.sitepoint.com/wp-content/uploads/2021/04/1618197067vitejs.png)
 Es un cliente generado en vite.
 En el proyecto existen tres rutas, 
 - `\` donde se pueden ver todos los blogs de la base de datos 
@@ -22,7 +22,7 @@ En el proyecto existen tres rutas,
 - `\portal` es el dashboard donde se encuentran todos los elementos del blog para poder crear, eliminar o actualizar los blogs
 
 ### Servidor
-[Express logo](https://miro.medium.com/v2/resize:fit:679/0*vq-JSMynSHUPXx70)
+![Express logo](https://miro.medium.com/v2/resize:fit:679/0*vq-JSMynSHUPXx70)
 ### Rutas implementadas en el servidor
 #### API Endpoints
 
@@ -116,7 +116,7 @@ En el proyecto existen tres rutas,
 Todos los puntos finales proporcionan respuestas de error significativas. Un `500 Error Interno del Servidor` indica un problema con el servidor que necesita ser investigado más a fondo.
 
 ### Base de datos
-[PostgreSQL](https://miro.medium.com/v2/resize:fit:610/1*mMq3Bem9r8ASAn1YwcTbEw.png)
+![PostgreSQL](https://miro.medium.com/v2/resize:fit:610/1*mMq3Bem9r8ASAn1YwcTbEw.png)
 Se utiliza la imágen en un contenedor de una base de datos en PostgreSQL.
 
 ## Comando para ejecutar el proyecto

@@ -2,10 +2,10 @@ FROM node:alpine
 
 WORKDIR /src/client
 
-COPY client/package*.json ./
+#COPY client/package*.json ./
 
-RUN npm install
+#RUN npm install
 
-COPY client/. .
+#COPY client/. .
 
 CMD ["npm","run","dev"]

@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="blog_db@localhost" uuid="807a2603-5697-45bb-b2e0-d600a91096bf">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:33068/blog_db</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="lab12@localhost" uuid="2fef1b8c-47c7-4c2a-82b9-a58b30c08f6f">
+    <data-source source="LOCAL" name="blog_db@localhost [2]" uuid="e45507f0-2528-4af7-83be-d8e7f4ed4382">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/lab12</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:54328/blog_db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="blog_db_pcqz@dpg-coq4dqf79t8c7389muug-a.virginia-postgres.render.com" uuid="b7b40eec-fd1e-4901-86e2-cb4490880c17">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://dpg-coq4dqf79t8c7389muug-a.virginia-postgres.render.com:5432/blog_db_pcqz</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="lab13@localhost" uuid="be37d9c5-6032-427f-9b40-1d7805b04cd7">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/lab13</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

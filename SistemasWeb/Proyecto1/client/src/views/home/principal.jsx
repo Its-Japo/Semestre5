@@ -1,4 +1,4 @@
-import Header from "./header";
+import HeaderLogin from "./headerLogin";
 import Content from "./content";
 
 function Principal() {
@@ -11,7 +11,7 @@ function Principal() {
         flexDirection: "column",
       }}
     >
-      <Header></Header>
+      <HeaderLogin></HeaderLogin>
       <Content></Content>
     </div>
   );

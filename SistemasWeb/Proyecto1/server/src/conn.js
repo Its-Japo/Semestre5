@@ -1,16 +1,17 @@
 'use strict'
 
-const mysql = require('mysql2/promise')
+const { Pool } = require('pg')
 
-const pool = mysql.createPool({
+const pool = new Pool({
   host: 'db',
   user: 'blog_user',
   password: 'blog_password',
   database: 'blog_db',
-  port: 3306,
-  waitForConnections: true,
-  connectionLimit: 10,
-  queueLimit: 10
+  port: 5432,  
+  max: 10, 
+  idleTimeoutMillis: 30000, 
+  connectionTimeoutMillis: 2000,
 })
+
 
 module.exports.pool = pool

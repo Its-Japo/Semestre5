@@ -1,5 +1,5 @@
 #Get latest mysql image
-FROM mysql:latest
+FROM postgres:latest
 
 #Set the environment variables
 #ENV MYSQL_DATABASE=blog_db
@@ -10,4 +10,4 @@ FROM mysql:latest
 #ENV MYSQL_PASSWORD=blog_password
 
 #Copy the database schema to the container
-COPY database/schema.sql ./docker-entrypoint-initdb.d/
+#COPY database/schema.sql ./docker-entrypoint-initdb.d/

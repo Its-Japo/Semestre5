@@ -7,8 +7,8 @@ services:
       context: ./
       dockerfile: client/Dockerfile
     container_name: vite-client-prod
-    #volumes:
-    #- ./client:/src/client
+    volumes:
+      - ./client:/src/client
     ports:
       - "5170:5173"
     depends_on:
@@ -19,8 +19,8 @@ services:
       context: ./
       dockerfile: server/Dockerfile
     container_name: express-app-prod
-    #volumes:
-     # - ./server:/src/server
+    volumes:
+      - ./server:/src/server
     ports:
       - "3030:3000"
     depends_on:
@@ -29,21 +29,19 @@ services:
       - DATABASE_URL=postgres://user:password@db:54328/mydatabase
 
   db:
-    build:
-      context: ./
-      dockerfile: database/Dockerfile
-    container_name: mysql-db-prod
-    #volumes:
-    #  - ./database:/docker-entrypoint-initdb.d/
+    image: postgres:latest
+    container_name: postgres-db-prod
+    volumes:
+      - ./database:/docker-entrypoint-initdb.d/
+      - postgres_data:/var/lib/postgresql/data
     environment:
-      MYSQL_DATABASE: blog_db
-      MYSQL_ROOT_PASSWORD: root_password
-
-      MYSQL_USER: blog_user
-      MYSQL_PASSWORD: blog_password
-
+      POSTGRES_DB: blog_db
+      POSTGRES_USER: blog_user
+      POSTGRES_PASSWORD: blog_password
     ports:
-      - "33068:3306"
+      - "54328:5432"
+volumes:
+  postgres_data:
 
 
   

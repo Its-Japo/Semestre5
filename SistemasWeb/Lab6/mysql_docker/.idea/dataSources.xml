@@ -1,25 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="blog_db@localhost [2]" uuid="e45507f0-2528-4af7-83be-d8e7f4ed4382">
+    <data-source source="LOCAL" name="lab14@localhost" uuid="2bb9378e-1592-4e6b-bf4e-096e9400dced">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:54328/blog_db</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5432/lab14</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="blog_db_pcqz@dpg-coq4dqf79t8c7389muug-a.virginia-postgres.render.com" uuid="b7b40eec-fd1e-4901-86e2-cb4490880c17">
+    <data-source source="LOCAL" name="datawarehouse@localhost" uuid="4cd65dea-fc7b-44c6-b313-b835f7e883ee">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://dpg-coq4dqf79t8c7389muug-a.virginia-postgres.render.com:5432/blog_db_pcqz</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5432/datawarehouse</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="lab13@localhost" uuid="be37d9c5-6032-427f-9b40-1d7805b04cd7">
+    <data-source source="LOCAL" name="blog_db_vw3r@dpg-cot5v2ljm4es73b8ndig-a.oregon-postgres.render.com" uuid="5bb6b4c7-07bc-46db-b0bd-c4238c3fd65b">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/lab13</jdbc-url>
+      <jdbc-url>jdbc:postgresql://dpg-cot5v2ljm4es73b8ndig-a.oregon-postgres.render.com:5432/blog_db_vw3r</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="parcial_2@localhost" uuid="cc0013f5-39f7-43dd-a15d-f36b3473d172">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/parcial_2</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="portafolio@127.0.0.1" uuid="5a612507-7794-4d40-ad79-b19a8c98bd4c">
+      <driver-ref>mongo</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.dbschema.MongoJdbcDriver</jdbc-driver>
+      <jdbc-url>mongodb://127.0.0.1:27017/portafolio</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="@localhost" uuid="f8376f89-4753-4e56-98e5-016490f0a92f">
+      <driver-ref>oracle.19</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@localhost:1521:XE</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="@localhost [2]" uuid="7a2e1098-2f38-4768-9e66-19c5b33784e4">
+      <driver-ref>oracle.19</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@localhost:1522:XE</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="your_database@localhost" uuid="f32c9cf7-a02c-4633-bedb-7498a43708db">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/your_database</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

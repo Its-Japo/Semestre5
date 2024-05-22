@@ -1,0 +1,11 @@
+<h2 id="proyectosTitle">Proyectos</h2>
+<div class="container">
+    
+    <div id="projectContainer">
+        <div *ngFor="let project of projects" class="project" [routerLink]="['/project-details/',project._id]">
+            <img src="{{url+'get-image/'+project.image}}" *ngIf="project.image">
+            <h3>{{project.name}}</h3>
+            <p>{{project.category}} - {{project.year}}</p>
+        </div>
+    </div>
+</div>

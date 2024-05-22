@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+
+
+  node-backend:
+    image: node:latest
+    container_name: node-backend
+    working_dir: /app
+    volumes:
+      - ./server:/app
+      - /app/node_modules
+    command: >
+      sh -c "npm install &&
+             npm start"
+    ports:
+      - "3700:3700"
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+
+  angular-app:
+    image: node:latest
+    container_name: angular-app
+    working_dir: /app
+    volumes:
+      - ./client:/app
+      - /app/node_modules
+    command: >
+      sh -c "npm install &&
+             npm run build &&
+             npm start"
+    ports:
+      - "4200:4200"
+    depends_on:
+      - node-backend
+volumes:
+  mongo-data:

@@ -1,0 +1,73 @@
+<div class="container" *ngIf="project">
+    <h2>{{title}}</h2>
+
+    <div class="success" *ngIf="status == 'success'">
+        El proyecto se ha {{accion}} correctamente, puedes verlo<a [routerLink]="['/project-details',savedProject._id]"> aqui</a>
+    </div>
+
+    <div class="fail" *ngIf="status == 'failed'">
+        El proyecto no se ha podido crear
+    </div>
+    <div class="content">
+        <div>
+            <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" #name="ngModel" [(ngModel)]="project.name" required/>
+                    <br />
+                    <span *ngIf="name.touched && !name.valid">
+                        El nombre es obligatorio
+                    </span>
+                </div>
+        
+                <div>
+                    <label for="description">Description</label>
+                    <textarea name="description" #description="ngModel" [(ngModel)]="project.description" required></textarea>
+                    <br />
+                    <span *ngIf="(description).touched && !description.valid">
+                        La descripcion es obligatoria
+                    </span>
+                </div>
+        
+                <div>
+                    <label for="category">Category</label>
+                    <input type="text" name="category" #category="ngModel" [(ngModel)]="project.category" required/>
+                    <br />
+                    <span *ngIf="category.touched && !category.valid">
+                        La categoria es obligatoria
+                    </span>
+                </div>
+        
+                <div>
+                    <label for="year">Año</label>
+                    <input type="number" name="year" #year="ngModel" [(ngModel)]="project.year" required/>
+                    <br />
+                    <span *ngIf="year.touched && !year.valid">
+                        El año es obligatorio
+                    </span>
+                </div>
+        
+                <div>                
+                    <label for="languages">Used Languages</label>
+                    <input type="text" name="languages" #languages="ngModel" [(ngModel)]="project.langs" required/>
+                    <br />
+                    <span *ngIf="languages.touched && !languages.valid">Los lenguajes son obligtorios</span>
+                </div>
+        
+                <div> 
+                    <label for="image"></label>
+                    
+                    <input type="file" name="image" placeholder="Upload" (change)="fileChangeEvent($event)"/>
+                </div>
+        
+                <input type="submit" value="Send" [disabled]="!projectForm.form.valid"/>
+            </form>
+        </div>
+        <div *ngIf="project.image" id="editImageDiv">
+            <div id="editImage">
+                <h3>Imagen actual</h3>
+                <img src="{{url + 'get-image/' + project.image}}" id="editImageItself">
+            </div>
+        </div>
+    </div>
+</div>

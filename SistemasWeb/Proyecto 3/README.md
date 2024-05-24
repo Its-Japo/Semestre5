@@ -14,7 +14,7 @@ Para poder ejecutar el proyecto se requiere de tener instaladas las siguientes t
 ## Estructura del repositorio
 
 ### Cliente
-![Angular Logo]([https://uploads.sitepoint.com/wp-content/uploads/2021/04/1618197067vitejs.png](https://externlabs.com/blogs/wp-content/uploads/2021/11/angularjs-framework.jpg))    
+![Angular Logo](https://uploads.sitepoint.com/wp-content/uploads/2021/04/1618197067vitejs.png](https://externlabs.com/blogs/wp-content/uploads/2021/11/angularjs-framework.jpg)    
 Es un cliente generado en angular.
 En el proyecto existen tres rutas, 
 - `\` Se puede ver una pequeña descripción sobre quién soy
@@ -208,7 +208,7 @@ En el proyecto existen tres rutas,
 Todos los puntos finales proporcionan respuestas de error significativas. Un `500 Error Interno del Servidor` indica un problema con el servidor que necesita ser investigado más a fondo.
 
 ### Base de datos
-![MongoDB]([https://miro.medium.com/v2/resize:fit:610/1*mMq3Bem9r8ASAn1YwcTbEw.png](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRltTA4JDfYMru1oWKLHuhTez-syAOT1UoqG55RkEcW&s))    
+![MongoDB](https://miro.medium.com/v2/resize:fit:610/1*mMq3Bem9r8ASAn1YwcTbEw.png](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRltTA4JDfYMru1oWKLHuhTez-syAOT1UoqG55RkEcW&s)    
 Se utiliza la imágen en un contenedor de una base de datos en MongoDB.
 
 ## Comando para ejecutar el proyecto

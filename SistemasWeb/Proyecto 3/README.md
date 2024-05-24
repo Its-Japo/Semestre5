@@ -1,4 +1,4 @@
-# Proyecto 1: Blog
+# Proyecto 3: Portafolio
 
 Esta carpeta del repositorio muestra el ambiente de desarrollo del proyecto de sistemas web
 

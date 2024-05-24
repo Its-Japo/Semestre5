@@ -3,8 +3,8 @@
 Esta carpeta del repositorio muestra el ambiente de desarrollo del proyecto de sistemas web
 
 Para ver los repositorios de producción ingresar a los enlaces debajo   
-[Repositorio Front](https://github.com/Its-Japo/ProyectoWebFront)   
-[Repositorio Back](https://github.com/Its-Japo/ProyectoWebBack)    
+[Repositorio Front](https://github.com/Its-Japo/Proyecto3WebFront)   
+[Repositorio Back](https://github.com/Its-Japo/Proyecto3WebBack)    
 
 ## Requisitos
 Para poder ejecutar el proyecto se requiere de tener instaladas las siguientes tecnologías.
